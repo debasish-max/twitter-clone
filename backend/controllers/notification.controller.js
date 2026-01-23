@@ -29,4 +29,8 @@ export const deleteNotifications = async (req, res) => {
 		console.log("Error in deleteNotifications function", error.message);
 		res.status(500).json({ error: "Internal Server Error" });
 	}
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> c1b20d5ab65918b65c63ef6b396957e485012706

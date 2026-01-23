@@ -74,7 +74,11 @@ export const getSuggestedUsers = async (req, res) => {
 			},
 			{ $sample: { size: 10 } },
 		]);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> c1b20d5ab65918b65c63ef6b396957e485012706
 		// 1,2,3,4,5,6,
 		const filteredUsers = users.filter((user) => !usersFollowedByMe.following.includes(user._id));
 		const suggestedUsers = filteredUsers.slice(0, 4);
@@ -150,4 +154,8 @@ export const updateUser = async (req, res) => {
 		console.log("Error in updateUser: ", error.message);
 		res.status(500).json({ error: error.message });
 	}
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> c1b20d5ab65918b65c63ef6b396957e485012706

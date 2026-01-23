@@ -9,4 +9,8 @@ router.post("/signup", signup);
 router.post("/login", login);
 router.post("/logout", logout);
 
+<<<<<<< HEAD
 export default router;
+=======
+export default router;
+>>>>>>> c1b20d5ab65918b65c63ef6b396957e485012706
